@@ -6,7 +6,7 @@
    "dynamic_config" : 1,
    "generated_by" : "ExtUtils::MakeMaker version 6.86, CPAN::Meta::Converter version 2.132830",
    "license" : [
-      "unknown"
+      "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -31,9 +31,31 @@
          }
       },
       "runtime" : {
-         "requires" : {}
+         "requires" : {
+            "CGI::Carp" : "0",
+            "CGI::Simple" : "0",
+            "Capture::Tiny" : "0",
+            "Crypt::RC4" : "0",
+            "Data::Dumper" : "0",
+            "Encode" : "0",
+            "File::Slurp" : "0",
+            "HTTP::AcceptLanguage" : "0",
+            "HTTP::Tiny" : "0",
+            "Import::Into" : "0",
+            "Log::Tiny" : "0",
+            "MIME::Base64" : "0",
+            "Module::Load" : "0",
+            "Module::Runtime" : "0",
+            "Moose" : "0",
+            "MooseX::MethodAttributes" : "0",
+            "Time::HiRes" : "0",
+            "Time::Local" : "0",
+            "URI" : "0",
+            "URI::Escape" : "0",
+            "namespace::autoclean" : "0"
+         }
       }
    },
    "release_status" : "stable",
-   "version" : "0.0001"
+   "version" : "0.10"
 }
