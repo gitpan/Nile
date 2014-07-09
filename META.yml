@@ -1,7 +1,7 @@
 ---
 abstract: 'Visual Web App Framework Separating Code From Design Multi Lingual And Multi Theme.'
 author:
-  - 'Ahmed Amin ELsheshtawy <mewsoft@cpan.org>'
+  - 'Ahmed Amin ELsheshtawy احمد امين الششتاوى <mewsoft@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 0
 configure_requires:
@@ -22,11 +22,15 @@ requires:
   CGI::Simple: 0
   Capture::Tiny: 0
   Crypt::RC4: 0
+  DBI: 0
   Data::Dumper: 0
+  DateTime: 0
   Encode: 0
   File::Slurp: 0
   HTTP::AcceptLanguage: 0
   HTTP::Tiny: 0
+  Hash::AsObject: 0
+  IO::Compress::Gzip: 0
   Import::Into: 0
   Log::Tiny: 0
   MIME::Base64: 0
@@ -34,9 +38,11 @@ requires:
   Module::Runtime: 0
   Moose: 0
   MooseX::MethodAttributes: 0
+  MooseX::NonMoose: 0
   Time::HiRes: 0
   Time::Local: 0
   URI: 0
   URI::Escape: 0
+  XML::TreePP: 0
   namespace::autoclean: 0
-version: 0.10
+version: 0.11
