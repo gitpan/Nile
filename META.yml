@@ -46,4 +46,4 @@ requires:
   URI::Escape: 0
   XML::TreePP: 0
   namespace::autoclean: 0
-version: 0.13
+version: 0.14
