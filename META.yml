@@ -37,13 +37,15 @@ requires:
   Module::Load: 0
   Module::Runtime: 0
   Moose: 0
+  MooseX::Declare: 0
   MooseX::MethodAttributes: 0
   MooseX::NonMoose: 0
   Router::Generic: 0
+  Tie::IxHash: 0
   Time::HiRes: 0
   Time::Local: 0
   URI: 0
   URI::Escape: 0
   XML::TreePP: 0
   namespace::autoclean: 0
-version: 0.17
+version: 0.18
