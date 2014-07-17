@@ -32,6 +32,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Benchmark::Stopwatch" : "0",
             "CGI::Carp" : "0",
             "CGI::Simple" : "0",
             "Capture::Tiny" : "0",
@@ -54,7 +55,6 @@
             "MooseX::Declare" : "0",
             "MooseX::MethodAttributes" : "0",
             "MooseX::NonMoose" : "0",
-            "Router::Generic" : "0",
             "Tie::IxHash" : "0",
             "Time::HiRes" : "0",
             "Time::Local" : "0",
@@ -66,5 +66,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.19"
+   "version" : "0.20"
 }
