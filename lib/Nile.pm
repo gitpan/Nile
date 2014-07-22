@@ -8,7 +8,7 @@
 #=========================================================#
 package Nile;
 
-our $VERSION = '0.23';
+our $VERSION = '0.24';
 
 =pod
 
@@ -572,6 +572,7 @@ use Nile::Paginate;
 use Nile::Database;
 use Nile::Setting;
 use Nile::Request;
+use Nile::Response;
 
 #use base 'Import::Base';
 use Import::Into;
@@ -895,7 +896,18 @@ has 'request' => (
       is      => 'rw',
       isa    => 'Nile::Request',
 	  lazy	=> 1,
-	  default => sub {Nile::Request->new;}
+	  default => sub {
+			shift->object("Nile::Request", @_);
+		}
+  );
+
+has 'response' => (
+      is      => 'rw',
+      isa    => 'Nile::Response',
+	  lazy	=> 1,
+	  default => sub {
+			shift->object("Nile::Response", @_);
+		}
   );
 
 has 'lang' => (
@@ -903,8 +915,7 @@ has 'lang' => (
 	  isa    => 'Nile::Lang',
 	  lazy	=> 1,
 	  default => sub {
-			my $self = shift;
-			$self->object("Nile::Lang", @_);
+			shift->object("Nile::Lang", @_);
 		}
   );
 
@@ -913,8 +924,7 @@ has 'router' => (
 	  isa    => 'Nile::Router',
 	  lazy	=> 1,
 	  default => sub {
-			my $self = shift;
-			$self->object("Nile::Router", @_);
+			shift->object("Nile::Router", @_);
 		}
   );
 
@@ -933,8 +943,7 @@ has 'dispatcher' => (
 	  isa    => 'Nile::Dispatcher',
 	  lazy	=> 1,
 	  default => sub {
-			my $self = shift;
-			$self->object("Nile::Dispatcher", @_);
+			shift->object("Nile::Dispatcher", @_);
 		}
   );
 

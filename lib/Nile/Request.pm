@@ -46,7 +46,7 @@ You access the request object by $self->me->request.
 
 =cut
 
-use Moose;
+use Nile::Base;
 use MooseX::NonMoose;
 extends 'CGI::Simple';
 
