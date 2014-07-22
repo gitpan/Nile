@@ -41,6 +41,7 @@
             "Data::Dumper" : "0",
             "DateTime" : "0",
             "Encode" : "0",
+            "File::Find::Rule" : "0",
             "File::Slurp" : "0",
             "HTTP::AcceptLanguage" : "0",
             "HTTP::Tiny" : "0",
@@ -66,5 +67,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.21"
+   "version" : "0.23"
 }

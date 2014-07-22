@@ -8,7 +8,7 @@
 #=========================================================#
 package Nile::Base;
 
-our $VERSION = '0.20';
+our $VERSION = '0.23';
 
 =pod
 
@@ -60,10 +60,11 @@ our @EXPORT_MODULES = (
 		#'Nile::Declare' => [],
 		'MooseX::MethodAttributes' => [],
 		#'MooseX::ClassAttribute' => [],
+		#'Module::Load' => [()], # will emit error for methods load redefined
 	);
 
 sub import {
-my ($class, %args) = @_;
+	my ($class, %args) = @_;
 	my $caller = caller;
 	my @modules = @EXPORT_MODULES;
     while (@modules) {
@@ -86,6 +87,10 @@ Please visit the project's homepage at L<https://metacpan.org/release/Nile>.
 =head1 SOURCE
 
 Source repository is at L<https://github.com/mewsoft/Nile>.
+
+=head1 SEE ALSO
+
+See L<Nile> for details about the complete framework.
 
 =head1 AUTHOR
 
