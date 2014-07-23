@@ -85,8 +85,7 @@
 	#$app->debug->off;
 	#say $app->debug(1),"  ,  ", $app->debug;
 	
-	my $response = $app->response->new;
-	say "response: $response";
+
 	exit;
 #=========================================================#
 sub test_paginate {

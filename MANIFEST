@@ -37,6 +37,7 @@ lib/Nile/Serialization.pm
 lib/Nile/Var.pm
 lib/Nile/View.pm
 lib/Nile/XML.pm
+lib/Nile/MIME.pm
 lib/Nile/Plugin/Date/Date.pm
 t/Nile.t
 META.yml                                 Module YAML meta-data (added by MakeMaker)

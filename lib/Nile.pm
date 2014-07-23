@@ -8,7 +8,7 @@
 #=========================================================#
 package Nile;
 
-our $VERSION = '0.25';
+our $VERSION = '0.26';
 
 =pod
 
@@ -910,6 +910,16 @@ has 'response' => (
 		}
   );
 
+has 'mime' => (
+      is      => 'rw',
+      isa    => 'Nile::MIME',
+	  lazy	=> 1,
+	  default => sub {
+			load Nile::MIME;
+			shift->object("Nile::MIME", only_complete => 1);
+		}
+  );
+
 has 'lang' => (
       is      => 'rw',
 	  isa    => 'Nile::Lang',
@@ -1205,7 +1215,9 @@ Shared Vars	L<Nile::Var|Nile::Var>.
 
 Langauge	L<Nile::Lang|Nile::Lang>.
 
-Http Request	L<Nile::Request|Nile::Request>.
+Request	L<Nile::Request|Nile::Request>.
+
+Response	L<Nile::Response|Nile::Response>.
 
 Dispatcher L<Nile::Dispatcher|Nile::Dispatcher>.
 
@@ -1226,6 +1238,8 @@ Serializer L<Nile::Serializer|Nile::Serializer>.
 Deserializer L<Nile::Deserializer|Nile::Deserializer>.
 
 Serialization L<Nile::Serialization|Nile::Serialization>.
+
+MIME L<Nile::MIME|Nile::MIME>.
 
 Abort L<Nile::Abort|Nile::Abort>.
 
