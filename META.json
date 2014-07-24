@@ -1,5 +1,5 @@
 {
-   "abstract" : "Visual Web App Framework Separating Code From Design Multi Lingual And Multi Theme.",
+   "abstract" : "Android Like Visual Web App Framework Separating Code From Design Multi Lingual And Multi Theme.",
    "author" : [
       "Ahmed Amin ELsheshtawy احمد امين الششتاوى <mewsoft@cpan.org>"
    ],
@@ -67,5 +67,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.26"
+   "version" : "0.27"
 }
