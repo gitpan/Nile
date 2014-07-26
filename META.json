@@ -44,6 +44,7 @@
             "File::Find::Rule" : "0",
             "File::Slurp" : "0",
             "HTTP::AcceptLanguage" : "0",
+            "HTTP::Headers" : "0",
             "HTTP::Tiny" : "0",
             "Hash::AsObject" : "0",
             "IO::Compress::Gzip" : "0",
@@ -56,6 +57,7 @@
             "MooseX::Declare" : "0",
             "MooseX::MethodAttributes" : "0",
             "MooseX::NonMoose" : "0",
+            "Scalar::Util" : "0",
             "Tie::IxHash" : "0",
             "Time::HiRes" : "0",
             "Time::Local" : "0",
@@ -67,5 +69,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.27"
+   "version" : "0.28"
 }

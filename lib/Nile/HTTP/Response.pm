@@ -1,12 +1,12 @@
 #	Copyright Infomation
 #=========================================================#
-#	Module	:	Nile::Response
+#	Module	:	Nile::HTTP::Response
 #	Author		:	Dr. Ahmed Amin Elsheshtawy, Ph.D.
 #	Website	:	https://github.com/mewsoft/Nile, http://www.mewsoft.com
 #	Email		:	mewsoft@cpan.org, support@mewsoft.com
 #	Copyrights (c) 2014-2015 Mewsoft Corp. All rights reserved.
 #=========================================================#
-package Nile::Response;
+package Nile::HTTP::Response;
 
 our $VERSION = '0.27';
 
@@ -16,7 +16,7 @@ our $VERSION = '0.27';
 
 =head1 NAME
 
-Nile::Response -  The HTTP response manager.
+Nile::HTTP::Response -  The HTTP response manager.
 
 =head1 SYNOPSIS
 
@@ -63,7 +63,7 @@ Nile::Response -  The HTTP response manager.
 
 =head1 DESCRIPTION
 
-Nile::Response - The HTTP response manager allows you to create PSGI response array ref.
+Nile::HTTP::Response - The HTTP response manager allows you to create PSGI response array ref.
 
 =cut
 
@@ -412,6 +412,19 @@ sub render {
 	print $self->as_string();
 }
 #=========================================================#
+sub send_file {
+	
+	my ($self, $file, $options) = @_;
+	
+	load Nile::HTTP::SendFile;
+	
+	my $sender = Nile::HTTP::SendFile->new;
+
+	$sender->send_file($self, $file, $options);
+
+
+}
+#=========================================================#
 sub build_body {
 
 	my $self = shift;
@@ -458,20 +471,49 @@ sub build_cookie {
 my @MON  = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
 my @WDAY = qw(Sun Mon Tue Wed Thu Fri Sat);
 
+=head2 cookie_date
+
+	say $res->cookie_date( time + 24 * 60 * 60);
+	#Fri, 25-Jul-2014 20:46:53 GMT
+
+Returns cookie formated date.
+
+=cut
+
 sub cookie_date {
-
-    my($self, $expires) = @_;
-
+    my ($self, $expires) = @_;
     if ($expires =~ /^\d+$/) {
-        my($sec, $min, $hour, $mday, $mon, $year, $wday) = gmtime($expires);
-        $year += 1900;
-
-        return sprintf("%s, %02d-%s-%04d %02d:%02d:%02d GMT",
-                       $WDAY[$wday], $mday, $MON[$mon], $year, $hour, $min, $sec);
-
+		return $self->make_date($expires, "cookie");
     }
-
     return $expires;
+}
+#=========================================================#
+=head2 http_date
+
+	say $res->http_date(time);
+	#Thu, 24 Jul 2014 20:46:53 GMT
+
+Returns http formated date.
+
+=cut
+
+sub http_date {
+    my ($self, $time) = @_;
+	return $self->make_date($time, "http");
+}
+#=========================================================#
+sub make_date {
+
+	my ($self, $time, $format) = @_;
+	
+	# format: cookie = "-", http = " "
+	my $sp = $format eq "cookie" ? "-" : " ";
+
+	my ($sec, $min, $hour, $mday, $mon, $year, $wday) = gmtime($time);
+	$year += 1900;
+
+	return sprintf("%s, %02d$sp%s$sp%s %02d:%02d:%02d GMT",
+				   $WDAY[$wday], $mday, $MON[$mon], $year, $hour, $min, $sec);
 }
 #=========================================================#
 has 'http_codes' => (
