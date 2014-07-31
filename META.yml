@@ -36,7 +36,7 @@ requires:
   IO::Compress::Gzip: 0
   Import::Into: 0
   Log::Tiny: 0
-  MIME::Base64: 0
+  MIME::Base64: 3.11
   Module::Load: 0
   Module::Runtime: 0
   Moose: 0
@@ -51,4 +51,4 @@ requires:
   URI::Escape: 0
   XML::TreePP: 0
   namespace::autoclean: 0
-version: 0.28
+version: 0.29
