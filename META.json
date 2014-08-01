@@ -4,7 +4,7 @@
       "Ahmed Amin ELsheshtawy احمد امين الششتاوى <mewsoft@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.86, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.142060",
    "license" : [
       "perl_5"
    ],
@@ -40,6 +40,9 @@
             "DBI" : "0",
             "Data::Dumper" : "0",
             "DateTime" : "0",
+            "Devel::StackTrace" : "0",
+            "Devel::StackTrace::AsHTML" : "0",
+            "Devel::StackTrace::WithLexicals" : "0",
             "Encode" : "0",
             "File::Find::Rule" : "0",
             "File::Slurp" : "0",
@@ -57,6 +60,7 @@
             "MooseX::Declare" : "0",
             "MooseX::MethodAttributes" : "0",
             "MooseX::NonMoose" : "0",
+            "PadWalker" : "0",
             "Scalar::Util" : "0",
             "Tie::IxHash" : "0",
             "Time::HiRes" : "0",
@@ -69,5 +73,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.29"
+   "version" : "0.30"
 }
