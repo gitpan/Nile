@@ -9,7 +9,7 @@ Options +ExecCGI
 AddHandler cgi-script cgi pl 
 
 # Set the default handler.
-DirectoryIndex index.cgi index.html index.shtml
+DirectoryIndex index.fcgi index.html index.shtml
 
 # save this file as UTF-8 and enable the next line for utf contents
 #AddDefaultCharset UTF-8
@@ -39,4 +39,4 @@ RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !=/favicon.ico
-RewriteRule ^(.*)$ index.cgi [L,QSA]
+RewriteRule ^(.*)$ index.fcgi [L,QSA]
