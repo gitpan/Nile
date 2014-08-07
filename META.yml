@@ -47,6 +47,7 @@ requires:
   MooseX::MethodAttributes: '0'
   MooseX::NonMoose: '0'
   PadWalker: '0'
+  Plack::Builder: '0'
   Scalar::Util: '0'
   Tie::IxHash: '0'
   Time::HiRes: '0'
@@ -55,4 +56,4 @@ requires:
   URI::Escape: '0'
   XML::TreePP: '0'
   namespace::autoclean: '0'
-version: '0.34'
+version: '0.35'
