@@ -62,6 +62,7 @@
             "MooseX::NonMoose" : "0",
             "PadWalker" : "0",
             "Plack::Builder" : "0",
+            "Plack::Middleware::Deflater" : "0",
             "Scalar::Util" : "0",
             "Tie::IxHash" : "0",
             "Time::HiRes" : "0",
@@ -74,5 +75,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.35"
+   "version" : "0.36"
 }
