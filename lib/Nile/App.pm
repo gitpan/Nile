@@ -7,7 +7,7 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 package Nile::App;
 
-our $VERSION = '0.43';
+our $VERSION = '0.44';
 our $AUTHORITY = 'cpan:MEWSOFT';
 
 =pod
@@ -135,7 +135,7 @@ sub object {
 sub add_object_context {
     my ($self, $object, $meta) = @_;
     $meta ||= $object->meta;
-    # add method "me" or one of its alt
+    # add method "app" or one of its alt
     #foreach (qw(app APP _app)) {
     foreach (qw(app)) {
         unless ($object->can($_)) {
@@ -706,9 +706,9 @@ sub helper {
     
     # add attribute "PI"
     $app->attr("PI" => 4 * atan2(1, 1));
-	
-	# or
-	$app->attr("PI" => sub{4 * atan2(1, 1)});
+    
+    # or
+    $app->attr("PI" => sub{4 * atan2(1, 1)});
 
     # get the attribute value
     say $app->PI;

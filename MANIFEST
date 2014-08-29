@@ -69,6 +69,7 @@ lib/Nile/XML.pm
 LICENSE
 Makefile.PL
 MANIFEST
+Nile.html
 README
 t/Nile.t
 META.yml                                 Module YAML meta-data (added by MakeMaker)
