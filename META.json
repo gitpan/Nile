@@ -65,6 +65,7 @@
             "Log::Tiny" : "0",
             "MIME::Base64" : "3.11",
             "MIME::Entity" : "0",
+            "Memcached::Client" : "0",
             "Module::Load" : "0",
             "Module::Runtime" : "0",
             "MongoDB" : "0",
@@ -90,5 +91,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.47"
+   "version" : "0.48"
 }

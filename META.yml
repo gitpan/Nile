@@ -51,6 +51,7 @@ requires:
   Log::Tiny: '0'
   MIME::Base64: '3.11'
   MIME::Entity: '0'
+  Memcached::Client: '0'
   Module::Load: '0'
   Module::Runtime: '0'
   MongoDB: '0'
@@ -72,4 +73,4 @@ requires:
   URI::Escape: '0'
   XML::TreePP: '0'
   namespace::autoclean: '0'
-version: '0.47'
+version: '0.48'
