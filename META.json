@@ -67,6 +67,9 @@
             "MIME::Entity" : "0",
             "Module::Load" : "0",
             "Module::Runtime" : "0",
+            "MongoDB" : "0",
+            "MongoDB::MongoClient" : "0",
+            "MongoDB::OID" : "0",
             "Moose" : "0",
             "MooseX::Declare" : "0",
             "MooseX::MethodAttributes" : "0",
@@ -74,6 +77,7 @@
             "PadWalker" : "0",
             "Plack::Builder" : "0",
             "Plack::Middleware::Deflater" : "0",
+            "Redis" : "0",
             "Scalar::Util" : "0",
             "Tie::IxHash" : "0",
             "Time::HiRes" : "0",
@@ -86,5 +90,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.46"
+   "version" : "0.47"
 }
