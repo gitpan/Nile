@@ -66,6 +66,7 @@ requires:
   Plack::Middleware::Deflater: '0'
   Redis: '0'
   Scalar::Util: '0'
+  Search::Elasticsearch: '0'
   Tie::IxHash: '0'
   Time::HiRes: '0'
   Time::Local: '0'
@@ -73,4 +74,4 @@ requires:
   URI::Escape: '0'
   XML::TreePP: '0'
   namespace::autoclean: '0'
-version: '0.48'
+version: '0.49'

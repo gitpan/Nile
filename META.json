@@ -80,6 +80,7 @@
             "Plack::Middleware::Deflater" : "0",
             "Redis" : "0",
             "Scalar::Util" : "0",
+            "Search::Elasticsearch" : "0",
             "Tie::IxHash" : "0",
             "Time::HiRes" : "0",
             "Time::Local" : "0",
@@ -91,5 +92,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.48"
+   "version" : "0.49"
 }
