@@ -74,4 +74,4 @@ requires:
   URI::Escape: '0'
   XML::TreePP: '0'
   namespace::autoclean: '0'
-version: '0.52'
+version: '0.53'
