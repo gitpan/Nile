@@ -18,6 +18,7 @@ no_index:
     - t
     - inc
 requires:
+  Archive::Zip: '0'
   Benchmark::Stopwatch: '0'
   CGI::Carp: '0'
   CGI::Simple: '0'
@@ -47,6 +48,7 @@ requires:
   HTTP::Tiny: '0'
   Hash::AsObject: '0'
   IO::Compress::Gzip: '0'
+  IO::Uncompress::Gunzip: '0'
   Import::Into: '0'
   Log::Tiny: '0'
   MIME::Base64: '3.11'
@@ -74,4 +76,4 @@ requires:
   URI::Escape: '0'
   XML::TreePP: '0'
   namespace::autoclean: '0'
-version: '0.53'
+version: '0.54'
