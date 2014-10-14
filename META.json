@@ -36,6 +36,7 @@
             "Benchmark::Stopwatch" : "0",
             "CGI::Carp" : "0",
             "CGI::Simple" : "0",
+            "CSS::Minifier" : "0",
             "Cache::Redis" : "0",
             "Capture::Tiny" : "0",
             "Crypt::RC4" : "0",
@@ -57,6 +58,7 @@
             "File::Find::Rule" : "0",
             "File::Slurp" : "0",
             "HTML::Entities" : "0",
+            "HTML::Packer" : "0",
             "HTTP::AcceptLanguage" : "0",
             "HTTP::Headers" : "0",
             "HTTP::Tiny" : "0",
@@ -64,6 +66,7 @@
             "IO::Compress::Gzip" : "0",
             "IO::Uncompress::Gunzip" : "0",
             "Import::Into" : "0",
+            "JavaScript::Minifier" : "0",
             "Log::Tiny" : "0",
             "MIME::Base64" : "3.11",
             "MIME::Entity" : "0",
@@ -78,6 +81,7 @@
             "MooseX::MethodAttributes" : "0",
             "MooseX::NonMoose" : "0",
             "PadWalker" : "0",
+            "Perl::Tidy" : "0",
             "Plack::Builder" : "0",
             "Plack::Middleware::Deflater" : "0",
             "Redis" : "0",
@@ -94,5 +98,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "0.54"
+   "version" : "0.55"
 }
